@@ -13,6 +13,7 @@ h1 {
 }
 
 
+
 .image-menu {
     position: relative;
     width: 100%;
@@ -91,5 +92,17 @@ i {
 }
 
 .large {
+    font-size: 40px;
+}
+
+.small h1 {
+    font-size: 15px;
+}
+
+.medium h1{
+    font-size: 25px;
+}
+
+.large h1 {
     font-size: 40px;
 }
