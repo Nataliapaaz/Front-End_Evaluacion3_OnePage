@@ -53,6 +53,35 @@ var handleFuente = () => {
             const element = elements[0]
             element.classList.add("small");
             element.classList.remove("large");}
+    }
+    if(estado=='0') {
+        btn.value = '1';
+        let elements = document.getElementsByClassName("smallh1");
+        const largo = elements.length;
+        for (let index = 0; index < largo; index++) {
+            const element = elements[0];
+            element.classList.add("mediumh1");
+            element.classList.remove("smallh1");
+        }
+    }
+    else if(estado == '1') {
+        btn.value = '2'
+        let elements = document.getElementsByClassName("mediumh1");
+        const largo = elements.length;
+        for (let index = 0; index < largo; index++) {
+            const element = elements[0];
+            element.classList.add("largeh1");
+            element.classList.remove("mediumh1");
+        }
+    }
+    else if(estado == '2') {
+        btn.value = '0'
+        let elements = document.getElementsByClassName("largeh1");
+        const largo = elements.length;
+        for (let index = 0; index < largo; index++) {
+            const element = elements[0]
+            element.classList.add("smallh1");
+            element.classList.remove("largeh1");}
 }
 }
 

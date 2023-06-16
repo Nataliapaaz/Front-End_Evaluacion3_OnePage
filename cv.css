@@ -95,14 +95,14 @@ i {
     font-size: 40px;
 }
 
-.small h1 {
-    font-size: 15px;
+.smallh1 {
+    font-size: 35px;
 }
 
-.medium h1{
-    font-size: 25px;
+.mediumh1{
+    font-size: 50px;
 }
 
-.large h1 {
-    font-size: 40px;
+.largeh1 {
+    font-size: 70px;
 }

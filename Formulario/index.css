@@ -1,0 +1,26 @@
+body {
+    background-color: #C3E49D;
+    padding: 40px;
+    border:20px;
+    font-family: Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+h1 {
+    color: #9844A6;
+}
+
+h2 {
+    color: #128F03
+}
+
+div {
+    font-family: monospace;
+    font-size: 20px;
+    margin: 10px;
+}
+
+form {
+    font-family: monospace;
+    font-size: 20px;
+    margin: 10px;
+}
