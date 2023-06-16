@@ -1,0 +1,27 @@
+body {
+    font-family:  'Arial Narrow Bold', sans-serif;
+    margin: 20px;
+    border: 20px;
+}
+
+.negro {
+    background-color: rgb(17, 17, 56);
+    color: whitesmoke;
+}
+
+.blanco {
+    background-color: blanchedalmond;
+    color: black;
+}
+
+.small {
+    font-size: 15px;
+}
+
+.medium {
+    font-size: 30px;
+}
+
+.large {
+    font-size: 45px;
+}
