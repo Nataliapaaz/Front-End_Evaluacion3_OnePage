@@ -48,6 +48,15 @@ h1 {
     line-height: 1.2em;
 }
 
+form {
+    margin: 20px;
+    padding: 20px;
+    width: 800px;
+    font-family: avenir;
+    font-size: 25px;
+    text-indent: 8px;
+}
+
 p {
     margin: 20px;
     padding: 20px;

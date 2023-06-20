@@ -171,23 +171,45 @@
 
 
   <h1 id="sec5" class="container-fluid text-center mediumh1">Cotiza una sesión de fotos</h1>
-  <form class="container-md center">
       <fieldset>
-        <div class="mb-3">
-          <label for="exampleFormControlInput1" class="form-label">Nombre</label>
-          <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="Nombre">
-        </div>
-        <div class="mb-3">
-          <label for="exampleFormControlInput1" class="form-label">Email</label>
-          <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
-        </div>
-        <div class="mb-3">
-          <label for="exampleFormControlTextarea1" class="form-label">Cuéntanos sobre lo que necesitas</label>
-          <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+        <div class="container-fluid text-center">
+          <form id="formulario" id="formulario">
+            <label>Para autentificarte ingresa tu mail: </label>
+            <input type="email" id="mail"><br>
+            <p id="result"></p>
+            <br>
+            <label>Ingresa tu nombre completo: </label>
+            <input type="text" id="nombre"><br>
+            <br>
+            <label>Ingresa el numero de fotos que quieras: </label>
+            <input type="number" id="numero"><br>
+            <br>
+            <label>Has agendado una sesión de fotos con nosotros antes?</label>
+            <br>
+            <input type="radio" id="si" name="radio" value="si">
+            <label for="si">Si</label><br>
+            <input type="radio" id="no" name="radio" value="no">
+            <label for="no">No</label><br>
+            <br>
+            <label>En que mes deseas tu sesion? :</label>
+            <input type="month" id="mes"><br>
+            <br>
+            <label>A que hora aproximada te gustaria agendar tu sesion? </label>
+            <input type="time" id="hora"><br>
+            <br>
+            <label>En que semana del mes te gustaria agendar tu sesion? </label>
+            <input type="week" id="semana"><br>
+            <br>
+            <label>Cuentanos un poco mas sobre lo que quieres </label>
+            <input type="textarea" id="comentarios"><br>
+            <br>
+            <button type="button" id="btn">Guardar</button>
+            <span id="sBtnAccion"></span>
+            <p>Has guardado: </p>
+        </form>
         </div>
       </fieldset>
-      <button type="button" class="btn btn-info">Enviar</button>
-  </form>
+      <div id="contenedorTabla"></div>
 
   <h1 id="sec6" class="container-fluid text-center mediumh1">Contáctame</h1>
   <footer>
@@ -208,5 +230,7 @@
   </footer>
   <script src="assets/js/script.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
+  <script src="main.js">
+  </script>
   </body>
 </html>
