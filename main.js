@@ -111,7 +111,7 @@ var cargarTabla = (listadoNuevo)=>{
     }
 }
 
-// Acá se le pasa el parametro de listado nuevo al arreglo
+// Acá se le pasa el parametro de listado nuevo al arreglo y se modifica lo que se desee recuperando su indice
 var modificar = (listadoNuevo)=> {
     console.log("Editando......")
     let eMail = document.getElementById("mail");
@@ -149,6 +149,7 @@ var modificar = (listadoNuevo)=> {
     cargarTabla(listadoNuevo);
 }
 
+/*En esta funcion flecha se eliminan los valores recuperados de los input en el localStorage recuperando el indice de la lista que se desea eliminar*/
 var eliminar = (listadoNuevo) =>{
     let eBtnEliminarUp = document.getElementById("btnEliminar");
     let indice = eBtnEliminarUp.value;
@@ -158,6 +159,7 @@ var eliminar = (listadoNuevo) =>{
     cargarTabla(listaFinal)
 }
 
+/*En esta funcion flecha se registran todos los valores recuperados de los input en el localStorage creando una lista que contiene cada uno de los valores de los campos*/
 var registrar = ()=>{
     let eMail = document.getElementById("mail");
     let mail = eMail.value;
@@ -258,13 +260,15 @@ function mostrar() {
 }
 */
 
+// esta funcion flecha recupera los datos que estan almacenados en el localStorage
 var obtenerDatos = ()=>{
     let listadoAntiguoStr = localStorage.getItem("datos");
     let listaAntiguo = JSON.parse(listadoAntiguoStr);
     cargarTabla(listaAntiguo)
 }
 
-
+//Aca se agrega el Listener al boton guardar para que llame a la funcion registrar y se guarden los datos en el local storage hay hacer click en el boton
 //document.getElementById("btn").addEventListener('click', validar);
 document.getElementById("btn").addEventListener("click", registrar);
+// Aca se cargan los datos cuando se refresca la pagina
 addEventListener('load', obtenerDatos);
